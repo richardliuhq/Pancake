@@ -1,0 +1,69 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xB6CAC5532C9223a49B8504f5aB0fBf0F6Dd50cE7",
+    "txHash": "0x055ff3a4a690cf94306b363881bdc9ed05a58b0fe6504b191fd81cd865f56ae2"
+  },
+  "proxies": [
+    {
+      "address": "0xc11af6cbD2cA3c481B792a4BEa8f8023Ab5565FD",
+      "txHash": "0x21da8dd104defd3aa6d2afe13e9a1c4e0ec67d79cccfa53c312fbcc2e48f47a1",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "a65cdfa308566facef6065beb9e631bc7782c0699e2093fd7f5bc24c50583bce": {
+      "address": "0xe8A0d7E95C6C262d0eb67f73D0071b3DA8331445",
+      "txHash": "0xd5e7fd3c5f98bf338c57399ce204a8ac86c010d4e5091ce78e5c7b34c79879dc",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Box",
+            "label": "value",
+            "type": "t_uint256",
+            "src": "..\\..\\..\\..\\C\\Blockchain\\ZACH\\BunnyMinter\\contracts\\Box.sol:6"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          }
+        }
+      }
+    },
+    "44008a36ed980b2a8d0981461d36d8ecaa93b79a02ff226a2c84e0df28ba895b": {
+      "address": "0x8852D6a0DEC3086602d1a3eb3e8E91b2a18f6656",
+      "txHash": "0x3eda5565a5e21025766207a0166f4291530c97155883a5310e1a82607421c32c",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "..\\..\\..\\..\\C\\Blockchain\\ZACH\\BunnyMinter\\contracts\\openzeppelin\\contracts-upgradeable\\proxy\\Initializable.sol:25"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\..\\..\\..\\C\\Blockchain\\ZACH\\BunnyMinter\\contracts\\openzeppelin\\contracts-upgradeable\\proxy\\Initializable.sol:30"
+          },
+          {
+            "contract": "Box",
+            "label": "number",
+            "type": "t_uint256",
+            "src": "..\\..\\..\\..\\C\\Blockchain\\ZACH\\BunnyMinter\\contracts\\Box.sol:8"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    }
+  }
+}

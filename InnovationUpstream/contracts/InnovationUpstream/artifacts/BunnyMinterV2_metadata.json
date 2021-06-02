@@ -1,0 +1,819 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "previousOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "BUNNY",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "BUNNY_BNB",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "BUNNY_POOL",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "DEPLOYER",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "FEE_MAX",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "PERFORMANCE_FEE",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "WBNB",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "WITHDRAWAL_FEE",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "WITHDRAWAL_FEE_FREE_PERIOD",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "_deprecated_helper",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "bnbProfit",
+						"type": "uint256"
+					}
+				],
+				"name": "amountBunnyToMint",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "duration",
+						"type": "uint256"
+					}
+				],
+				"name": "amountBunnyToMintForBunnyBNB",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "bunnyChef",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "bunnyPerBunnyBNBFlip",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "bunnyPerProfitBNB",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "initialize",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "isMinter",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "mint",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "asset",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_withdrawalFee",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_performanceFee",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "mintFor",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "asset",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_withdrawalFee",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_performanceFee",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "mintForV2",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "mintGov",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "profit",
+						"type": "uint256"
+					}
+				],
+				"name": "performanceFee",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "priceCalculator",
+				"outputs": [
+					{
+						"internalType": "contract PriceCalculatorBSC",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "renounceOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "safeBunnyTransfer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_bunnyChef",
+						"type": "address"
+					}
+				],
+				"name": "setBunnyChef",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_bunnyPerBunnyBNBFlip",
+						"type": "uint256"
+					}
+				],
+				"name": "setBunnyPerBunnyBNBFlip",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_ratio",
+						"type": "uint256"
+					}
+				],
+				"name": "setBunnyPerProfitBNB",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "minter",
+						"type": "address"
+					},
+					{
+						"internalType": "bool",
+						"name": "canMint",
+						"type": "bool"
+					}
+				],
+				"name": "setMinter",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_fee",
+						"type": "uint256"
+					}
+				],
+				"name": "setPerformanceFee",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_fee",
+						"type": "uint256"
+					}
+				],
+				"name": "setWithdrawalFee",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_period",
+						"type": "uint256"
+					}
+				],
+				"name": "setWithdrawalFeeFreePeriod",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "transferBunnyOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "depositedAt",
+						"type": "uint256"
+					}
+				],
+				"name": "withdrawalFee",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "zapBSC",
+				"outputs": [
+					{
+						"internalType": "contract ZapBSC",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "zapBSCV2",
+				"outputs": [
+					{
+						"internalType": "contract ZapBSC",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"owner()": {
+					"details": "Returns the address of the current owner."
+				},
+				"renounceOwnership()": {
+					"details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+				},
+				"transferOwnership(address)": {
+					"details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"bunny/BunnyMinterV2.sol": "BunnyMinterV2"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"bunny/BunnyMinterV2.sol": {
+			"keccak256": "0xa81409d0c8be419ce28970581040746f4565626bd8701e652a782689e1c3b6be",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8073fff6973c1d6331cb38bf53754b6beb47fe72d60dd5f2a337c6bbb44aee1e",
+				"dweb:/ipfs/QmPNNZVtZZxn36MtUeVKBonFbGqwZBptDH187ymvaDQDPh"
+			]
+		},
+		"dashboard/calculator/PriceCalculatorBSC.sol": {
+			"keccak256": "0x5bc6d77aeb0a450f4e5086d699b79a3fb0b9e00233c73df3ce0040b0b7ea4c59",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fcb0aa048fc8b5b370e388669ab41ab48cc90586d965658dad5d31cdb0b6595b",
+				"dweb:/ipfs/QmZWdc5r6V4ZW1au4xpfdTjkEmt8WDEpqit41s5fF4j2zc"
+			]
+		},
+		"interfaces/AggregatorV3Interface.sol": {
+			"keccak256": "0xfdde328fd8fb28ffd3320d43c9b435aecada0bf7fef48a9a15d8f52899d2d3b1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://39535dde96c18bd49589f15d8a634ed6d7075b39562ff335a8a035328cfc7e2d",
+				"dweb:/ipfs/QmRfFg9pKcp76Htnb2bzh9AjtMSs17NQrswvayRo6ibZ7M"
+			]
+		},
+		"interfaces/IBunnyMinterV2.sol": {
+			"keccak256": "0x9d624cbd2e7b18b6a417254cac8350d5605096386944f04ed9552be3b629ad86",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4453130dc2e6376c3bccc53f203842d7a0903826149403061f0fca1c17557695",
+				"dweb:/ipfs/Qmc8GHiF5tsmG1LPKKT2i5Xdy6wq1qHNBaHcQy3b9EGvfR"
+			]
+		},
+		"interfaces/IPancakeFactory.sol": {
+			"keccak256": "0xa21c5951837cb85c043482fa2021ea8f1f1d70f00d7b263e5e9e265b98da72b3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://21dcf1803d97203bd9ee4099e4810e6c0b165c02677eaeba93bc055be0847a75",
+				"dweb:/ipfs/QmSKtgdEzfekGjXVnzNtiYZY6cMEMJtW822a2BkaMRQ8XH"
+			]
+		},
+		"interfaces/IPancakePair.sol": {
+			"keccak256": "0x40c23968da7ef5df282849766da0a26c5f1854059bdf44b749758c49354bb2f1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://dca106c480d3d86a53c1dd29d3568197b81f7021bc930e5339ffae3736b1559d",
+				"dweb:/ipfs/QmQmK5yboeFaimrNRGfYo1hp5JYJJ8G2Atn9yRM6n1Hja4"
+			]
+		},
+		"interfaces/IPancakeRouter01.sol": {
+			"keccak256": "0x0d67e52a548d43593fa21b81d69fc13b907dd554edcb7787c3dbb3ba2c53469d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://99d8466d5c53f39daf8b9c299c28c888d3d6be8bf90f34b7364835770da5f416",
+				"dweb:/ipfs/QmP833hK7SEvCWWaKPag5VZmvbJhCAjEXT37Aa7KjpbfkG"
+			]
+		},
+		"interfaces/IPancakeRouter02.sol": {
+			"keccak256": "0xd9cede55ad8eac7063d675571e121c9f9883081d376734262097ab4a908c472d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://50039bedea68bde39effcd37118dcb6407ffdc70fc87033e9b6ccfd8cd5a68a5",
+				"dweb:/ipfs/Qmdfvy3hXEGKu6T8yFpqSRZTu5K5CMPr8zP72SKcNagTQY"
+			]
+		},
+		"interfaces/IPriceCalculator.sol": {
+			"keccak256": "0xd6482f32de807d5536516061e1e9fcbdff61e475529fdb932ac43b2c90d440d8",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a2618b0d06a9c23ccecf5667c7db9661f06ce56f69b86f95b3c66c3fca4e4af1",
+				"dweb:/ipfs/QmWMfnDKXPUqpor4XerBnhBt7tBfvtbAF9Q2sQK2V9vJQb"
+			]
+		},
+		"interfaces/IStakingRewards.sol": {
+			"keccak256": "0x525e356f64fc872e1afb21c46281c2d38f9c5f9de31cdfc6eb5511df7a232987",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5f02c058cac8dbc0c2aa7173be007283ffe451daf25495a1dd8262c55c837444",
+				"dweb:/ipfs/QmRyfEjLSJQGiJYXEAuMjwwPu5nFcB23QKty8F7dYMpDbD"
+			]
+		},
+		"openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol": {
+			"keccak256": "0x3fd8c85fa0d6db509c076479a581da91e9cfc576f0c42ca1c4384ec2a6927159",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://f25695ffc8b8324cf949678a38a32448b9800bbaa5faef367be86c1c428e0b5d",
+				"dweb:/ipfs/QmQYVQJyg4W3R88q6rW9dpAzX7gSGpj8yUpVQzFSF1q9tF"
+			]
+		},
+		"openzeppelin/contracts-upgradeable/proxy/Initializable.sol": {
+			"keccak256": "0x36379d565c892655822caa4d36d3f1eb920b2dcb1caa1b9068a7564153d4b64b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6b1c1628825f9e6b61c6429862a7db2698825298e2589e88c96373b3ec62b255",
+				"dweb:/ipfs/QmX2sobAuVwaKviRAzxuSfjzM76KTg8hGU8zQhFJubxtrC"
+			]
+		},
+		"openzeppelin/contracts-upgradeable/utils/AddressUpgradeable.sol": {
+			"keccak256": "0x875e44b4993861a3e4132610dbbe670d2fd461dfb793aa8b7a0ecba9c5e3dcbd",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2f47edb4bf8ae2ca9f8f9694df2f7cbd726825c832fc9e900aafa08438c29cc6",
+				"dweb:/ipfs/QmSGnPfAhihHZ1tgnEpvYgWoEPvWbfCG31TGGMXDRL3wnk"
+			]
+		},
+		"openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol": {
+			"keccak256": "0xebcd7eb909fdb72755f408a0490c3ecc4c3511967eaeda9126a48c8d22882a28",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://99224e5315f91eeac958d966274d2f6cd516ffe7f01717e9bff21c83163142b9",
+				"dweb:/ipfs/Qmc8bDabLMznf4YnbCvGxgf7hrQ1aEeNMAf7e78P6AC5gX"
+			]
+		},
+		"pancakeswap/pancake-swap-lib/contracts/GSN/Context.sol": {
+			"keccak256": "0xdfad2f67f9b90ef469e7cf45254362ba070ed7b6b24178522a0f23b17ef742c6",
+			"license": "GPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://8a55551a42833a3ce0d60a6f7f697e983aba2daa16c1032311e9ca41b896dfaf",
+				"dweb:/ipfs/QmQKqXVrMfhwPLb184AmCxPNMiK1KxrpxVavwfnbuJQXAL"
+			]
+		},
+		"pancakeswap/pancake-swap-lib/contracts/access/Ownable.sol": {
+			"keccak256": "0x0957957e67ddbabc039a9d070eb4c9e40f0d3b2948f1b252c4fdaf04a0dc926d",
+			"license": "GPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://73b9edf4b10bd31db8b4a538b0900e867aac0ac94c9005cbb52a9d54f203b4ee",
+				"dweb:/ipfs/Qmd9kTDyapBGts5f6Fu6g9NbwAXczbwAeBCr4dMjcAXWRf"
+			]
+		},
+		"pancakeswap/pancake-swap-lib/contracts/math/SafeMath.sol": {
+			"keccak256": "0x61f7309b48f11de8884e26542b911fdff2534e899f212e34eb4e399e57a9c867",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7eb4cf168b5b3422ee4aafc518537e6341b26ae38d8e3b8d8c96f17e71fe6301",
+				"dweb:/ipfs/Qmes9Noj9pTL8zQ4hkZEFHYBdVgNjsn166fY4VqXQsMbDv"
+			]
+		},
+		"pancakeswap/pancake-swap-lib/contracts/token/BEP20/BEP20.sol": {
+			"keccak256": "0x861bcc007a6aafc65aba146c384c55648960191c026fa0ce8e97f048d84bd46f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://045172ab82ae0ba30b091fa032527638d210a0557310abe1ffe1150bb68cc820",
+				"dweb:/ipfs/QmbNtB6kXmHa5V5741ciXikHa9LhYZ3JPuSxCLtp2BcuDp"
+			]
+		},
+		"pancakeswap/pancake-swap-lib/contracts/token/BEP20/IBEP20.sol": {
+			"keccak256": "0xe6555dcb6ec5cb9dcaf2322cf003a1e3d2257471768b32cdc433025a0bc3ac3d",
+			"license": "GPL-3.0-or-later",
+			"urls": [
+				"bzz-raw://a1f47d4071cfc9f31174526b1a63d0be2169a199f0a5b9819267d9d070adad6d",
+				"dweb:/ipfs/QmcmHiuPjMSXZLNubeScGkXvWAz6dM1cciv5zGPNJaK9Po"
+			]
+		},
+		"pancakeswap/pancake-swap-lib/contracts/token/BEP20/SafeBEP20.sol": {
+			"keccak256": "0x77cb504deca4a6bf84834759bcb4009ba780093d3e4afc244b5d83f0c2bb4907",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1fc3617816d7097e8c54178b231fa5015ac9e72e6a401c604b175e94d73f46ee",
+				"dweb:/ipfs/QmS6Zpyt1tcrEBJJyZiG1H9EZwLq8SEhH9ZNB8TQQRqZrG"
+			]
+		},
+		"pancakeswap/pancake-swap-lib/contracts/utils/Address.sol": {
+			"keccak256": "0xbe2939e35a126bed12382b07d3729489c3536aa84188af5682427877595b83ed",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4b77767cd892d4718296d8e8a52b6bd0167643d9c1e8e62099d33a650cfd040d",
+				"dweb:/ipfs/QmepRNrdk5r4FXffRf6nraTQPLqZidMYpZ6XTUBo8oVNrg"
+			]
+		},
+		"zap/ZapBSC.sol": {
+			"keccak256": "0xdd45b9ab969a2d1b63e95800a53ab7db1ec3f6ff9c5c627a31b3bebe871774ca",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://c0508c33f03feba1e4770971e9a64165b9d7dc54426ea5358a7c40f251e1f888",
+				"dweb:/ipfs/QmTu1z97TeQHqP2hakD5RvuhHYHCiZm7XykBJe1wzrZzym"
+			]
+		}
+	},
+	"version": 1
+}

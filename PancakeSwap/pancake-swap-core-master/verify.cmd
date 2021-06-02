@@ -1,0 +1,1 @@
+truffle run verify PancakeFactory@0xb0454F3663803628Df0e2D5a9a201fa7d7285132 --network testnet

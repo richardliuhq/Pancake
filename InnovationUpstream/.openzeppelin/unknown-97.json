@@ -1,0 +1,50 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xD6944D8fDC6A6d3D043aF9dE76D4F5A0A03316EC",
+    "txHash": "0xcb89b8b668781d39afdcec5c3933ac4b492ed58b6c7e903f85f026a234841091"
+  },
+  "proxies": [
+    {
+      "address": "0xd5C24ED43d027bF07cF62dC1B6936A0eb004A247",
+      "txHash": "0xcf6fde21ac4adfec167880a4e48c79daebaba85b99ca4dcf4d62366cf660deea",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "44008a36ed980b2a8d0981461d36d8ecaa93b79a02ff226a2c84e0df28ba895b": {
+      "address": "0xD2526f1cCf6d317218a82dAfab8a3C98bF61d7cc",
+      "txHash": "0xf44171dbcceaeeff660ecd6a05bf92651417626e975027bc5f61b5627866d36b",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "..\\..\\..\\..\\C\\Blockchain\\ZACH\\BunnyMinter\\contracts\\openzeppelin\\contracts-upgradeable\\proxy\\Initializable.sol:25"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "..\\..\\..\\..\\C\\Blockchain\\ZACH\\BunnyMinter\\contracts\\openzeppelin\\contracts-upgradeable\\proxy\\Initializable.sol:30"
+          },
+          {
+            "contract": "Box",
+            "label": "number",
+            "type": "t_uint256",
+            "src": "..\\..\\..\\..\\C\\Blockchain\\ZACH\\BunnyMinter\\contracts\\Box.sol:8"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_bool": {
+            "label": "bool"
+          }
+        }
+      }
+    }
+  }
+}
